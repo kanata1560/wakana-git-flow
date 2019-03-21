@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>若菜凌大</title>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <p>Growth inc.</p>
+    </div>
+
+    <!-- ヘッダー内のメインナビゲーションバーとなりますので、<nav>タグを使用するのが好ましいです。 -->
+
+    <nav id="js-nav">
+      <ul class="header-right">
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#">事業内容</a></li>
+        <li><a href="#">ニュース</a></li>
+        <li><a href="#">会社概要</a></li>
+        <li><a href="#">採用情報</a></li>
+        <li><a href="#">アクセス</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </nav>
+
+
+    <a class="nav-button" id="js-nav-button" href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+
+  </header>
+
+  <main>
+    <ul id="list">
+      <li class="item"><img src="img/img1.jpg" alt="" onload="startSlider()"></li>
+      <li class="item"><img src="img/img2.jpg" alt=""></li>
+      <li class="item"><img src="img/img4.jpg" alt=""></li>
+    </ul>
+  </main>
+
+  <div class="news">
+    <h2>News</h2>
+    <!-- クラス名が2語以上の場合は、-(ハイフン)もしくは_(アンダーバー)で単語を分割しましょう。 -->
+    <div class="news-title">
+      <div class="news-content">
+        <p class="date">2017/04/21</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="news-content">
+        <p class="date">2017/04/21</p>
+        <p>Blanditiis incidunt, expedita minima ut.</p>
+      </div>
+      <div class="news-content">
+        <p class="date">2017/04/21</p>
+        <p>Illum tempore nemo est quidem?</p>
+      </div>
+      <div class="news-content">
+        <p class="date">2017/04/21</p>
+        <p>Ipsam sint consectetur, odit quidem!</p>
+      </div>
+      <div class="news-content">
+        <p class="date">2017/04/21</p>
+        <p>Tenetur animi earum vel hic.</p>
+      </div>
+      <div class="news-content">
+        <p class="date">2017/04/21</p>
+        <p>Vero perferendis nam neque odit.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="interview">
+    <!-- クラス名が2語以上の場合は、-(ハイフン)もしくは_(アンダーバー)で単語を分割しましょう。 -->
+    <div class="interview-box">
+      <h2>社長インタビュー</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, velit</p>
+      <a class="interview-btn" href="#">詳しく見る</a>
+    </div>
+  </div>
+
+  <div class="business">
+    <h2>事業内容</h2>
+    <div class="business-box">
+      <div class="box">
+        <i class="fas fa-chart-line"></i>
+        <p class="business-title">ビジネスA</p>
+        <p class="business-text">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="box">
+        <i class="far fa-user-circle"></i>
+        <p class="business-title">ビジネスB</p>
+        <p class="business-text">Rem, ipsum! Amet officia, hic.</p>
+      </div>
+      <div class="box">
+        <i class="far fa-handshake"></i>
+        <p class="business-title">ビジネスC</p>
+        <p class="business-text">Explicabo, sed, voluptatum. Tempore, labore.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="desc">
+    <div class="desc-left">
+      <div class="desc-position">
+        <p>会社概要</p>
+        <a class="desc-btn" href="#">詳しく見る</a>
+      </div>
+    </div>
+    <div class="desc-right">
+      <div class="desc-position">
+        <p>採用情報</p>
+        <a class="desc-btn" href="#">詳しく見る</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="access">
+    <h2>ACCESS</h2>
+    <div class="access-guide">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.8662763504817!2d139.70871141528858!3d35.7295071349301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d5d4043e0dd%3A0x213775d25d2b034d!2z5rGg6KKL6aeF!5e0!3m2!1sja!2sjp!4v1549470917649" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      <!-- 以下のようにdivタグで細かくレイアウトしていく方法でも構いませんが、考えようによってはこちらは
+      「表」と捉えることも可能だと思います。表を作成する際は、tableという概念を使用するのが好ましいです。
+      以下のサイトを参考に、tableタグでレイアウトしてみて下さい。
+      http://www.htmq.com/html/table.shtml -->
+      <!-- <div class="access-group">
+        <div class="access-content">
+          <p class="access-text">住所</p>
+          <p class="access-about">東京都豊島区</p>
+        </div>
+        <div class="access-content">
+          <p class="access-text">TEL</p>
+          <p class="access-about">0120-000-000</p>
+        </div>
+        <div class="access-content">
+          <p class="access-text">FAX</p>
+          <p class="access-about">00120-000-000</p>
+        </div>
+        <div class="access-content">
+          <p class="access-text">アクセス</p>
+          <div class="access-about">
+            <p>［車でお越しの方］</p>
+            <p>セブンイレブンすぐそば</p>
+            <p>［車でお越しの方］</p>
+            <p>セブンイレブンすぐそば</p>
+            <p>［車でお越しの方］</p>
+            <p>セブンイレブンすぐそば</p>
+          </div>
+        </div>
+      </div> -->
+
+
+
+      <!-- tableタグで作成したのですが、アクセスの6項目の間隔を狭めることができませんでした。 -->
+      <table class="access-group">
+        <tr>
+          <th>住所</th>
+          <td>東京都豊島区</td>
+        </tr>
+        <tr>
+          <th>TEL</th>
+          <td>0120-000-000</td>
+        </tr>
+        <tr>
+          <th>FAX</th>
+          <td>00120-000-000</td>
+        </tr>
+        <tr>
+          <th rowspan="6">アクセス</th>
+          <td>［車でお越しの方］</td>
+          <tr>
+            <td>セブンイレブンすぐそば</td>
+          </tr>
+          <tr>
+            <td>［車でお越しの方］</td>
+          </tr>
+          <tr>
+            <td>セブンイレブンすぐそば</td>
+          </tr>
+          <tr>
+            <td>［車でお越しの方］</td>
+          </tr>
+          <tr>
+            <td>セブンイレブンすぐそば</td>
+          </tr>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+
+  <footer>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </footer>
+  <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
